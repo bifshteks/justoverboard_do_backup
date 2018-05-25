@@ -1,0 +1,28 @@
+.lead-image {
+	background-image: url('../img/search-input.jpg');
+	background-size: cover;
+	height: 450px;
+}
+
+.search-input-wrapper .search-input {
+	height: 50px;
+	/*border-radius: 5px;*/
+	/*width: 60%;
+	margin-left: 20%;*/
+	padding: 0 30px 0 30px;
+	font-size: 2.25rem;
+}
+
+.all-search {
+	vertical-align: middle;
+}
+
+.table {
+	display: table;
+}
+
+.table-cell {
+	display: table-cell;
+}
+
+.track-buy {}

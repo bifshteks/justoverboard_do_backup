@@ -1,0 +1,23 @@
+<div style="height:80px;background-color:#b73764;position:absolute;bottom:0;position: fixed;width: 100%;padding: 15px">
+	<sound-manager></sound-manager>
+	<div class="col" style="">
+		<button class="btn btn-primary" style="width:50px;height:50px;border-radius:50%;float:left;font-size: 23px;" play-pause-toggle data-play="<span class=&quot;glyphicon glyphicon-play&quot;></span>" data-pause="<span class=&quot;glyphicon glyphicon-pause&quot;></span>">
+			<span class="glyphicon glyphicon-play"></span>
+		</button>
+
+		<button class="btn btn-primary" style="width:50px;height:50px;border-radius:50%;float:left;font-size: 23px; margin-left: 20px;color:white;" repeat-music ng-click="repeatToggle()">
+			<span class="glyphicon glyphicon-repeat"></span>
+		</button>
+
+
+		
+		<button class="btn btn-primary" style="width:50px;height:50px;border-radius:50%;float:left;font-size: 23px; margin-left: 20px;color:white;" mute-music ng-click="changeMute()">
+			<span  ng-class="volumeToggle"></span>
+		</button>
+	</div>
+
+
+	<div style="height: 30px;width: 60%;border: 1px solid #cccccc;margin-left:30%;" seek-track>
+        <div style="height: 30px;background-color: #E0EAF1;" ng-style="{'width': ( progress + '%' ) } "></div>
+	</div>
+</div>

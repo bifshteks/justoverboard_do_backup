@@ -1,0 +1,42 @@
+<!-- NG-VIEW \\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+				<div class="lead-image table " style="margin-bottom: 0">
+					<div class="all-search table-cell">
+						<div class="input-group input-group-lg search-input-wrapper col-md-6 col-md-offset-3">
+							<div class="input-group-prepend">
+					        	<div class="input-group-text" id="basic-addon1">@</div>
+					        </div>
+							<input class="form-control form-control-lg  search-input" type="text" placeholder="What are you searching for?" aria-describedby="basic-addon1" aria-label="@" ng-model="searchExpression">
+						</div>
+					</div>
+					
+				</div>
+				<!-- MUSIC LIST -->
+				<div class="all-music-list" style="min-height: 400px">
+					
+					<table class="table" >
+						<tr ng-repeat="track in tracks | filter:searchExpression">
+
+							<td class="col-sm-2">
+								<button class="btn btn-primary" style="width:30px;height:30px;border-radius:50%;" music-player="play" add-song="track" >
+									<span class="glyphicon glyphicon-play"></span>
+								</button>
+								Name: {{ track.title }}(id={{ track.id }})
+							</td>
+							<td class="col-sm-2">Time: {{ track.duration | sec2min }}</td>
+							<td class="col-sm-2">Ganre: <span ng-repeat="gan in track.ganre">{{ gan }},&nbsp;</span> </td>
+							<td class="col-sm-2">Tags: <span ng-repeat="tag in track.tags">{{ tag }},&nbsp;</span> </td>
+							<td class="col-sm-2">BPM: {{ track.bpm }}</td>
+							<td class="col-sm-2">
+								<button class="btn btn-lg btn-primary" ng-click="controller.open(track.name, track.id)">
+									Buy for: {{ track.cost  }} 
+									<img src="./static/img/rub.png" style="height: 10px;"/>
+								</button>
+							</td>
+							
+						</tr>
+					</table>
+				</div>
+
+				
+

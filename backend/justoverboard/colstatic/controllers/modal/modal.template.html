@@ -1,0 +1,27 @@
+<div class="full-modal" style="padding: 15px">
+	<div class="modal-header">
+		<h3 class="modal-title" id="modal-title">Выберите тариф {{ $ctrl.qwe }} for {{ $ctrl.trackName }}</h3>
+	</div>
+	<div class="modal-body row" style="margin-bottom: 20px">
+		<button class="btn btn-primary btn-lg col" 
+		style="height: 50px; font-size: 15px " ng-click="$ctrl.addToCart('mp3')">
+			Первый тариф
+		</button>
+		<button class="btn btn-secondary btn-lg col" 
+		style="height: 50px; font-size: 15px; margin-left:10px" ng-click="$ctrl.addToCart('mp3+wav')">
+			Второй тариф
+		</button>
+		<button class="btn btn-success btn-lg col" 
+		style="height: 50px; font-size: 15px; margin-left:10px" ng-click="$ctrl.addToCart('wav+sec')">
+			Третий тариф
+		</button>
+		<button class="btn btn-danger btn-lg col" 
+		style="height: 50px; font-size: 15px; margin-left:10px" ng-click="$ctrl.addToCart('full')">
+			Четвертый тариф
+		</button>
+	</div>
+	<div class="btns" style="float:right">
+		<button class="btn btn-primary" style="width: 80px; height: 30px; margin-left: 10px" ng-click="$ctrl.ok()">OK</button>
+		<button class="btn btn-dark" style="width: 80px; height: 30px; margin-left: 10px" ng-click="$ctrl.close()">Cancel</button>
+	</div>
+</div>

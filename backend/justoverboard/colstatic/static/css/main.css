@@ -1,0 +1,146 @@
+.wrapper {
+	height: 100%;
+}
+
+.all-side-bar-menu {
+	position: fixed;
+	min-width: 50px;
+	max-width: 250px;
+	height: 100%;
+	background-color: #7ecdae;;
+	z-index: 5;
+	font-size: 18px;
+	font-weight: 600;
+
+}
+
+ol {
+	list-style-type: none;
+}
+ol.menu-list {
+	padding: 0;
+}
+
+.menu-list a {
+	color: ;
+}
+
+.menu-list li {
+	height: 50px;
+}
+
+.menu-list li a {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+.menu-list-item-icon {
+	width: 50px;
+	height: 50px;
+	background-color: #7ecdae;;
+	float: left;
+	position: relative;
+	z-index: 6;
+
+}
+
+.menu-list-item-icon span {
+	display: block;
+	text-align: center;
+	top: 30%;
+	font-size: 25px;
+} 
+
+.menu-item-name {
+	margin-left: -200px;
+	width: 200px;
+	height: 100%;
+	float: right;
+	display: table;
+}
+
+.menu-item-name-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu-item-name.active {
+	margin-left: 0;
+}
+
+.all-content {
+	margin-left: 50px;
+}
+
+header {
+	padding: 0 40px 0 40px;
+	background-color: #8b8ce1;
+	color: white;
+}
+
+
+
+@-webkit-keyframes toActivateMenu {
+	0%   { margin-left: -200px; }
+	100% { margin-left: 0px; }
+}
+@-moz-keyframes toActivateMenu {
+	0%   { margin-left: -200px; }
+	100% { margin-left: 0px; }
+}
+@-o-keyframes toActivateMenu {
+	0%   { margin-left: -200px; }
+	100% { margin-left: 0px; }
+}
+@keyframes toActivateMenu {
+	0%   { margin-left: -200px; }
+	100% { margin-left: 0px; }
+}
+
+@-webkit-keyframes toDeactivateMenu {
+	0%   { margin-left: 0px; }
+	100% { margin-left: -200px; }
+}
+@-moz-keyframes toDeactivateMenu {
+	0%   { margin-left: 0px; }
+	100% { margin-left: -200px; }
+}
+@-o-keyframes toDeactivateMenu {
+	0%   { margin-left: 0px; }
+	100% { margin-left: -200px; }
+}
+@keyframes toDeactivateMenu {
+	0%   { margin-left: 0px; }
+	100% { margin-left: -200px; }
+}
+
+.menu-is-active {
+	-webkit-animation: toActivateMenu 1s     cubic-bezier(.25,.46,.45,.94);
+	-moz-animation:    toActivateMenu 1s     cubic-bezier(.25,.46,.45,.94);
+	-o-animation:      toActivateMenu 1s     cubic-bezier(.25,.46,.45,.94);
+	animation:         toActivateMenu 1s     cubic-bezier(.25,.46,.45,.94);
+	margin-left: 0;
+}
+
+.menu-is-not-active {
+	-webkit-animation: toDeactivateMenu 0.5s     cubic-bezier(0,1.75,.68,.19);
+	-moz-animation:    toDeactivateMenu 0.5s     cubic-bezier(0,1.75,.68,.19);
+	-o-animation:      toDeactivateMenu 0.5s     cubic-bezier(0,1.75,.68,.19);
+	animation:         toDeactivateMenu 0.5s     cubic-bezier(0,1.75,.68,.19);
+	margin-left: -200px;
+}
+
+
+
+.header-row {
+	margin-right: 0;
+	margin-left: 0;
+	/*padding-left: 15px;*/
+}
+
+.all-content {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+

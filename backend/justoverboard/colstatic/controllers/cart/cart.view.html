@@ -1,0 +1,28 @@
+<div class="all-cart" style="height:100%">
+	<div class="cart-header" style="height:50px;padding:15px">
+		<h1>Cart</h1>
+	</div>
+	<div class="cart-body" style="padding:30px">
+		<table class="table" ng-if="controller.thereAreOrdered" >
+			<tr>
+				<th class="">имя трека</th>
+				<th class="">какие именно файлы</th>
+				<th class="">Цена</th>
+			</tr>
+			<tr ng-repeat="each in controller.orderedTracks" class="">
+				<td class="">{{ each.id }}</td>
+				<td class="">{{ each.option }}</td>
+				<td class="">Isn't set P</td>
+			</tr>
+			
+		</table>
+
+		
+		<!-- <p> -->
+			<h2 ng-if="!controller.thereAreOrdered"><qwe>Cart is empty</qwe></h2>
+		<!-- </p> -->
+		
+
+		
+	</div>
+</div>
